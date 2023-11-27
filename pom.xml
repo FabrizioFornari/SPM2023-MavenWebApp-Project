@@ -154,10 +154,7 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<!-- Use tomcat9 user defined credentials. 
-Usually you would place them under the Maven 
-folder .settings.xml telling eclipse to read them from there
-					by just using adding <server>tomcat9</server>-->
+                    <server>tomcat9</server>
 					<username>war-deployer</username>
 					<password>maven-tomcat-plugin</password>
 					<update>true</update>
