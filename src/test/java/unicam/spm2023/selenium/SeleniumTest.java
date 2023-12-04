@@ -49,7 +49,7 @@ class SeleniumTest {
 		String projectPath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/java/unicam/spm2023/drivers/chromedriver");
 
-		//System.out.println(projectPath);
+		//System.out.println(projectPath)
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://pros.unicam.it/");
 
