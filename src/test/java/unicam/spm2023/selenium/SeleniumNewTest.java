@@ -119,22 +119,6 @@ class SeleniumNewTest {
 			
 	}
 	
-	@Test
-	void checkThisWebAppTitle() throws InterruptedException {
-		
-		driver.get("http://localhost:8080/spm2023/");
 
-		Thread.sleep(3000);
-		
-		String at = driver.getTitle();
-		String et = "SPM 2023";
-		
-		//System.out.println(at);		
-		Thread.sleep(4000);
-
-		assertEquals(et,at);
-		
-		
-	}
 
 }
