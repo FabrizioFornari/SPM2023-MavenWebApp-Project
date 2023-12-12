@@ -58,7 +58,6 @@ class SeleniumNewTest {
 	}
 
 	@Test
-	@Disabled
 	void checkProsSite() throws InterruptedException {
 		
 		driver.get("http://pros.unicam.it/");
@@ -66,7 +65,7 @@ class SeleniumNewTest {
 		Thread.sleep(3000);
 		
 		String at = driver.getTitle();
-		String et = "PROS[ - PROcesses & Services lab | Computer Science division @Unicam]";
+		String et = "PROS - PROcesses & Services lab | Computer Science division @Unicam";
 		
 		//System.out.println(at);		
 		Thread.sleep(4000);
@@ -118,7 +117,7 @@ class SeleniumNewTest {
 		//TO COMPLETE
 			
 	}
-	
+
 
 
 }

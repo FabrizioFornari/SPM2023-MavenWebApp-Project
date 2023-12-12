@@ -44,6 +44,7 @@ class SeleniumTest {
 	}
 
 	@Test
+	@Disabled
 	void checkProsSite() throws InterruptedException {
 
 		String projectPath = System.getProperty("user.dir");
