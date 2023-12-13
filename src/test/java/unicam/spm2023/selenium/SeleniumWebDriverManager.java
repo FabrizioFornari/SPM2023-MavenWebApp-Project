@@ -29,7 +29,7 @@ class SeleniumWebDriverManager {
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		WebDriverManager.chromedriver().setup();
-		options.addArguments("--headless");
+		//options.addArguments("--headless");
 	}
 	
 	
@@ -46,7 +46,8 @@ class SeleniumWebDriverManager {
 	@BeforeEach
 	void setUp() throws Exception {
 
-		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
+		//driver = new ChromeDriver(options);
 	}
 
 	/**
