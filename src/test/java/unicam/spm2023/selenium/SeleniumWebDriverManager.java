@@ -80,6 +80,7 @@ class SeleniumWebDriverManager {
 	
 	@Test
 	//@Disabled
+	@Tag("AcceptanceTest")
 	void checkProsSiteSearch() throws InterruptedException {
 		
 		// navigate your driver to mail.google.com
