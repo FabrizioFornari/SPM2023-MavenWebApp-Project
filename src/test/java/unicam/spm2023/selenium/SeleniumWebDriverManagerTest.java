@@ -17,7 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 
-class SeleniumWebDriverManager {
+class SeleniumWebDriverManagerTest {
 
 	static String projectPath;	
 	static WebDriver driver;
