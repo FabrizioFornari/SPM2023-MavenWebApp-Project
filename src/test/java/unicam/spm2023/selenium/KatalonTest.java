@@ -9,6 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 
@@ -20,11 +21,13 @@ public class KatalonTest {
   private boolean acceptNextAlert = true;
   private static StringBuffer verificationErrors = new StringBuffer();
   static JavascriptExecutor js;
+  static ChromeOptions options = new ChromeOptions();
   @BeforeAll
   public static void setUp() throws Exception {
     WebDriverManager.chromedriver().setup();
     //System.setProperty("webdriver.chrome.driver", "");
-    driver = new ChromeDriver();
+    options.addArguments("--headless");
+    driver = new ChromeDriver(options);
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
     js = (JavascriptExecutor) driver;

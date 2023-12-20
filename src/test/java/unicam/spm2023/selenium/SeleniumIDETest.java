@@ -10,16 +10,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import java.util.*;
 
 public class SeleniumIDETest {
   private static WebDriver driver;
   private static Map<String, Object> vars;
   static JavascriptExecutor js;
+
+  static ChromeOptions options = new ChromeOptions();
   @BeforeAll
   public static void setUp() {
-    driver = new ChromeDriver();
-    driver = new ChromeDriver();
+    options.addArguments("--headless");
+    driver = new ChromeDriver(options);
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
   }

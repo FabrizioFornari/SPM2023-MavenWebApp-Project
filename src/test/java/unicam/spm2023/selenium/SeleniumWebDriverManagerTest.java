@@ -29,7 +29,7 @@ class SeleniumWebDriverManagerTest {
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		WebDriverManager.chromedriver().setup();
-		//options.addArguments("--headless");
+		options.addArguments("--headless");
 	}
 	
 	
@@ -46,8 +46,8 @@ class SeleniumWebDriverManagerTest {
 	@BeforeEach
 	void setUp() throws Exception {
 
-		driver = new ChromeDriver();
-		//driver = new ChromeDriver(options);
+		//driver = new ChromeDriver();
+		driver = new ChromeDriver(options);
 	}
 
 	/**
@@ -79,7 +79,7 @@ class SeleniumWebDriverManagerTest {
 	}
 	
 	@Test
-	//@Disabled
+	@Disabled
 	@Tag("AcceptanceTest")
 	void checkProsSiteSearch() throws InterruptedException {
 		
