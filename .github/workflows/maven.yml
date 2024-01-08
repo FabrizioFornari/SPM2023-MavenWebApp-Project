@@ -35,7 +35,7 @@ jobs:
       with:
         image: fabriziofornari89/SPM2023-MavenWebApp-Project
         tags: v1, latest
-        registry: hub.docker.com
+        registry: docker.io
         #dockerfile: Dockerfile.ci
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
