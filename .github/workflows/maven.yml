@@ -33,7 +33,7 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: fabriziofornari89/SPM2023-MavenWebApp-Project
+        image: fabriziofornari89/spm2023-mavenwebapp-project
         tags: v1, latest
         registry: docker.io
         dockerfile: src/Dockerfile
